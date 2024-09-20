@@ -40,8 +40,10 @@ This assignment has 12 tasks:
 
 Before continuing, make sure that these tasks are completed!
 
-- [x] Has a Vite+React project folder with a built `dist/` folder
-- [x] The vite project `.gitignore` file does NOT include `dist`
+- [ ] Has a Vite+React project folder with a built `dist/` folder
+- [ ] The vite project `.gitignore` file does NOT include `dist`
+FEEDBACK: 
+Make sure to remove dist from the gitignore file or else the dist folder will not be pushed up to github. 
 - [x] Has a `server` folder with an `index.js` file and a `package.json` file inside
 - [x] `package.json` has `express` installed as a dependency and `nodemon` as a dev dependency
 - [x] `package.json` has a `"dev"` script that uses `nodemon` and a `"start"` script that uses `node`
@@ -53,11 +55,17 @@ Before continuing, make sure that these tasks are completed!
 - [x] The `__dirname` variable is used to generate an absolute path to the `dist/` folder of your React application
 - [x] The `express.static()` middleware serves the static assets in the React application's `dist/` folder.
 - [x] A middleware controller prints the request method, url, and time of request for every request sent to the server, and then invokes the `next()` middleware in the chain.
-- [x] The `app` listens on an available port (I recommend `8080`)
+- [ ] The `app` listens on an available port (I recommend `8080`)
+FEEDBACK:
+Make sure to make ur app listen on a port EX: app.listen(port, () => ...)
+
+Without it, it wont be able to take requests and invoke controllers
 
 **Deployment Technical Requirements**
 
-- [x] Your GitHub page has a link to the deployed server in the About section. 
+- [ ] Your GitHub page has a link to the deployed server in the About section. 
+FEEDBACK:
+Once the other issues are fixed, hopefully your deployed link will work along with it! As of right now tho, it is not and gives me a 502 error. 
 
 ## Part 1 — Setup
 
