@@ -34,11 +34,6 @@ const serveStatic = express.static(pathToDistFolder);
 // Use the middleware function to serve static assets
 app.use(serveStatic);
 
-/* FEEDBACK:
- * you did not use the app.listen() method to start the server
-  * you should add the following line of code to start the server:
-  * 
-  * app.listen(3000, () => {
-  *  console.log('Server is running on http://localhost:3000');
-  * });
- */
+app.listen(3000, () => {
+  console.log('Server is running on http://localhost:3000');
+});
